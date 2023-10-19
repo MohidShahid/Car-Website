@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="nav-wrapper">
+            <div class="grad-bar">
+                <div class="container-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>0161 5050508</span>
+                </div>
+                <div class="container1">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span> info@company.com</span>
+                </div>
+            </div>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="Images/White Logo.svg"
+                        alt="Company Logo">
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav no-search">
+                    <li class="nav-item"><a href="index.html">HOME</a></li>
+                    <li class="nav-item"><a href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a href="Inventory.html">WORK</a></li>
+                    <li class="nav-item"><a href="#">CAREERS</a></li>
+                    <li class="nav-item"><a href="Contact.html">CONTACT US</a></li>
+                    <i class="fas fa-search" id="search-icon"></i>
+                    <input class="search-input" type="text" placeholder="Search..">
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- main Container -->
+     <div class="box-detail">
+        <div id="filter-container">
+         <div id="mobilefilter"><img src="Images/filter-icon-color.svg" width="60px" alt="">Filters</div>
+         <div class="sidebar">
+            <div class="gap-box">
+            <h1 class="h1-box">Search Your Car</h1>
+            <!-- search bar -->
+            <div class="wrap">
+                <div class="search">
+                   <input type="text" class="searchTerm" placeholder="Search...">
+                   <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                  </button>
+                </div>
+            </div></div>
+                <div id="filter-box">
+                <select id="brandFilter">
+                  <option value="All">Makes</option>
+                  <option value="Audi">Audi</option>
+                  <option value="Honda">Honda</option>
+                  <option value="Mercedes Benz">Mercedes Benz</option>
+                  <option value="Nissan">Nissan</option>
+                  <option value="Toyota">Toyota</option>
+                  <option value="Volkaswagen">Volkaswagen</option>
+                  <!-- Add more options based on your car brands -->
+                </select>
+                <select id="categoryFilter"> 
+                  <option value="All">Model</option>
+                  <option value="A6 Hybrid">A6 Hybrid</option>
+                  <option value="Alphard">Alphard</option>
+                  <option value="Cube Cubic">Cube Cubic</option>
+                  <option value="Algrand Highwaystar">Algrand Highwaystar</option>
+                  <option value="Estima Hybrid">Estima Hybrid</option>
+                  <option value="Freelander">Freelander</option>
+                  <!-- Add more options based on your categories -->
+                </select>
+                <select id="PriceFilter">
+                  <option value="All">Prices</option>
+                  <option value="10000">&#163;10000</option>
+                  <option value="15000">&#163;15000</option>
+                  <option value="20000">&#163;20000</option>
+                  <option value="25000">&#163;25000</option>
+                  <option value="30000">&#163;30000</option>
+                  <!-- Add more options based on your categories -->
+                </select>
+                <button class="reset">Reset All Filters</button></div>
+        </div></div>
+        <!-- Product Card grid -->
+        <div class="card-container">
+            <div class="item">
+                <img src="./Images/bmw.png" class="img text-center" alt="img1"><h1 class="model">Product Title</h1></a>
+                    <div class="car-details">
+                        <ul class="car-features" id="car-features">
+                            <!-- Features will be dynamically populated here -->
+                        </ul>
+                    </div>
+                    <h2 class="price">$900</h2>
+                    <button class="details">View details</button>
+            </div>
+        </div>
+     </div>
+    <footer class="bar-1">
+        <div class="foot">
+            <div style="flex: 1; margin-bottom: 10px; margin-left: 70px;">
+                <h4 class="links" style="margin-bottom: 10px;">Quick Links:</h4>
+                <ul class="table" style="list-style: none; padding: 0;">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span class="service"><strong>Services Department</strong>
+                    <p class="schedule">Mon-Fri 9:00am-9:00pm <br>
+                        fri-sun 2:00am-6:00pm
+                    </p>
+                </span>
+            </div>
+            <div class="box-2" style="flex: 2; margin-bottom: 10px;">
+                <h4 class="box-3">Company Address:</h4>
+                <p class="box-1"><i class="fa-solid fa-location-arrow"></i>24 MIDLAND STREET ARDWICK MANCHESTOR</p>
+
+                <p class="box-1"><i class="fa-solid fa-mobile-screen-button"></i>(123) 456-7890</p>
+
+                <p class="box-1"><i class="bi bi-envelope-at-fill"></i>info@company.com</p>
+
+                <p class="box-1"><i class="fa-brands fa-whatsapp"></i> 03204735748</p>
+
+            </div>
+            <div style="flex: 2; margin: 20px 0px 10px 0px; text-align: center; flex-direction: column; width: 75%;">
+                <img src="Images/Grey-logo.svg" alt="Company Logo" style="max-width: 30%; height: auto; margin-bottom: 20px;">
+                <div class="social">
+                  <i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-twitter"></i>
+                </div>
+              </div>
+        </div>
+    </footer>
+    <footer><span class="authority">&copy; Copyright Saga Motor Group</span></footer>
+    <script src="product.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+[ 
+    {   "id" : 1,
+        "makes": "Mercedes Benz",
+        "imageSrc": [
+            "Images/jpg3.jpg",
+            "Images/Mercedes.jpg",
+            "Images/2.jpg",
+            "Images/3.jpg",
+            "Images/4.jpg",
+            "Images/5.jpg"
+        ],
+        "model": "A6 Hybrid",
+        "price": 12000,
+        "features": [
+            "Engine: 2.0L Turbocharged",
+            "Transmission: Automatic",
+            "Color: Silver",
+            "Interior: Leather",
+            "Navigation System",
+            "Bluetooth Connectivity"
+        ]
+    },
+    {   "id" : 2,
+        "makes": "Audi",
+        "imageSrc": [
+            "Images/jpg3.jpg",
+            "Images/1.jpg",
+            "Images/2.jpg",
+            "Images/3.jpg"
+        ],
+        "model": "Alphard",
+        "price": 25000,
+        "features": [
+            "Engine: 2.0L Turbocharged",
+            "Transmission: Automatic",
+            "Color: Silver",
+            "Interior: Leather",
+            "Navigation System",
+            "Bluetooth Connectivity"
+        ]
+    },
+    {  "id" : 3,
+        "makes": "Audi",
+        "imageSrc": [
+            "Images/jpg3.jpg",
+            "Images/1.jpg",
+            "Images/2.jpg",
+            "Images/3.jpg"
+        ],
+        "model": "Alphard",
+        "price": 30000,
+        "features": [
+            "2.0L Turbocharged",
+            "Automatic",
+            "Silver",
+            "Leather",
+            "Navigation System",
+            "Diesel"
+        ]
+    }
+]

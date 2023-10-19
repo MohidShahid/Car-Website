@@ -1,0 +1,316 @@
+*{
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Karla', sans-serif;
+}
+.box-detail{
+    display: flex;
+    width: 100%;
+    height: 1300px;
+    margin-top: 10px;
+    justify-content: center;
+    /* align-items: center; */
+}
+.sidebar{
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 12%;
+  margin-right: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #434141;
+}
+
+/* Style for the search bar container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 81%;
+    border: 3px solid #6046ff;
+    border-right: none;
+    padding: 16px;
+    height: 48px;
+    border-radius: 31px 0 0 27px;
+    outline: none;
+
+  }
+  
+  .searchTerm:focus{
+    color: #6046ff;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 52px;
+    border: 1px solid #6046ff;
+    background: #6046ff;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 10px 11px 0;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 100%;
+    position: absolute;
+    top: 73%;
+    left: 35%;
+}
+  .h1-box{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+  .filter1{
+    margin-top: 15%;
+    border: none;
+  }
+
+#brandFilter,#categoryFilter, #PriceFilter{
+  width: 90%;
+  color: darkviolet;
+  border: none;
+  height: 40px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 8px auto;
+}
+
+  #brandFilter{
+    margin-top: 50px !important;
+  }
+
+select{
+    width: 10%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: #555;
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    border: 1px solid rgb(41, 18, 18);
+  }
+  select:focus{
+    outline: #371bed;
+  }
+
+  select>option{
+    font-size: 18px;
+    color: #555;
+    background-color: rgb(247, 247, 247);
+    background-image: none;
+    font-size: 18px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid rgb(41, 18, 18);
+  }
+
+  option::hover{
+    background-color: black;
+    color: white;
+  }
+  .reset{
+    width: 84%;
+    margin: 10px auto;
+    background-color: white;
+    font-size: 22px;
+    height: 55px;
+    border-radius: 7px;
+    color: #645aa7;
+    font-weight: bolder;
+}
+  .card-container{
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+
+#brandFilter option {
+  background-color: white;
+  color: #333;
+}
+
+#brandFilter:focus {
+  outline: none;
+  border-color: #007bff; /* Change the border color when focused */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box-shadow */
+}
+.item{
+  height: 437px;
+  width: 290px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif !important;
+}
+.item img , .img{
+    width: 100% !important;
+    height: 200px !important;
+    background-color: rgb(224,224,224);
+    background-size: cover;
+    background-position: center;
+  }
+  .text-left{
+    padding: 5px;
+  }
+  .gap-box{
+    display: flex;
+    position: relative;
+    width: 94%;
+    justify-content: center;
+  }
+
+
+.car-features{
+  margin-top: 0;
+  list-style: none;
+  margin-bottom: 0rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(104px, 2fr));
+  color: #7c5454;
+  font-size: 14px;
+  font-weight: 500;
+  width: 99%;
+  font-family: 'Karla', sans-serif !important;
+}
+
+.model{
+  font-size: 1.2rem;
+  color: #007bff;
+  font-weight: 700;
+  margin-top: 8px;
+}
+.price{
+  margin-top: 13px;
+  font-size: 1.5rem;
+  text-align: right;
+  margin-right: 44px;
+  font-weight: bold;
+}
+
+.details {
+  padding: 1em 1em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2c9caf;
+  transition: all 1000ms;
+  font-size: 10px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #2c9caf;
+}
+
+.details:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.details::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2c9caf;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.details:hover::before {
+  width: 250%;
+}
+
+ @media screen and (max-width: 1200px) {
+.box-detail{
+  flex-direction: column;
+  height: auto;
+}
+
+.card-container {
+  width: 100%;
+ }
+
+  #filter-container{
+    width: 25%;
+  }
+
+.h1-box{
+  margin-bottom: 24px;
+}
+ }
+
+ @media screen and (max-width:850px){
+  #filter-container{
+    width: 35%;
+    margin-left: 10px;
+  }
+ }
+
+ @media screen and (max-width:570px){
+  #filter-container{
+    width: 60%;
+    margin-left: 10px;
+  }
+ }
+
+ #filter-box{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width:450px){
+  #mobilefilter{
+      display: none;
+  }
+}
+
+@media screen and (max-width:450px){
+  .sidebar{
+    display: none;
+  }
+  .box-detail{
+    align-items: center;
+  }
+}
+
+#mobilefilter{
+    width: 78%;
+    height: 63px;
+    border: 1px solid #8686c7;
+    font-size: 22px;
+    text-align: center;
+}
